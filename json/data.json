@@ -1,0 +1,97 @@
+[
+         {
+            
+            "id" : "europa-01",
+            "titulo": "eu",
+            "foto": "./fotos/Madrid-2.jpg",
+            "pais": "España",
+            "ciudad": "Madrid",
+            "precio": 3000,
+            "puntacion":"5⭐",
+            "info": "Puerta del Sol , Pedir un delicioso chocolate caliente con porras en la histórica Chocolatería San Ginés o una napolitana casera en La Mallorquina, para después acercarte a la Puerta del Sol, es una de las mejores cosas que hacer en Madrid."
+         },
+         {
+            "id" : "europa-02",
+            "titulo": "eu",
+            "foto": "./fotos/Milan-1.jpg",
+            "pais": "Italia",
+            "ciudad": "Milan",
+            "precio": 2400,
+            "puntacion":"4⭐",
+            "info": "LA ÚLTIMA CENA DE LEONARDO DAVINCI Cuando te encuentres en el centro histórico de Milán no puedes dejar de conocer una de las joyas de esta ciudad, una de las piezas artísticas más enigmáticas que se conocen hasta el momento, “La Última Cena” de Leonardo Da Vinci. La misma se ha vuelto extremadamente popular gracias a los libros de Dan Brown."
+         },
+         {
+            "id" : "europa-03",
+            "titulo": "eu",
+            "foto": "./fotos/Paris-1.jpg",
+            "pais": "Francia",
+            "ciudad": "Paris",
+            "precio": 4000,
+            "puntacion":"5⭐",
+            "info": "La Torre Eiffel Con sus 300 metros de altura sigue siendo la más alta de toda la ciudad. Fue parte de la exposición universal temporal en 1889 pero a pesar de las críticas de muchos artistas de la época, sus visionarios defensores lograron dejarla permanente. Hoy es el monumento que cobra entrada más visitado del mundo, con más de 7.1 millones de turistas cada año. Tiene 3 pisos donde se puede comer en renombrados restaurantes, mientras se disfruta de una vista panorámica de París. Y si la torre es una imagen impactante en el día."
+         },
+   
+      
+         {
+           
+            "id" : "america-04",
+            "titulo": "am",
+            "foto": "./fotos/mendoza-1.jpg",
+            "pais": "Argentina",
+            "ciudad": "Mendoza",
+            "precio": 1500,
+            "puntacion":"5⭐",
+            "info": "Puente del Inca El Puente del Inca se encuentra al noroeste de la provincia de Mendoza y es una formación rocosa que forma un puente natural sobre el río Las Cuevas.Se ubica a unos 183 kilómetros de la Ciudad de Mendoza por la Ruta No. 7, cerca del paso a Chile, y de la entrada principal del Parque Provincial Aconcagua. Posee una forma curiosa y una gran variedad de colores entre los tonos del naranja, amarillo y ocre."
+         },
+         {
+            "id" : "america-05",
+            "titulo": "am",
+            "foto": "./fotos/medellin-1.jpg",
+            "pais": "Colombia",
+            "ciudad": "Medellin",
+            "precio": 3500,
+            "puntacion":"4⭐",
+            "info": "omuna 13 La Comuna 13, un barrio de pasado trágico y violento donde murieron cientos de personas por la acción de las guerrillas, los grupos paramilitares, la guerra sucia del gobierno y las bandas de narcotráfico como el Cartel de Medellín de Pablo Escobar, ha sabtituloo superar todas estas adverstituloades gracias al trabajo de su gente y transformarlo en el lugar más imprescindible que visitar en Medellín."
+         },
+         {
+            "id" : "america-06",
+            "titulo": "am",
+            "foto": "./fotos/rio-1.jpg",
+            "pais": "Brasil",
+            "ciudad": "Rio",
+            "precio": 5000,
+            "puntacion":"3⭐",
+            "info": "Copacabana Custodiada por el Cerro Pan de Azúcar, la Playa de Copacabana, además de ser la de mayor acogtituloa, es el escenario de varios eventos de la ciudad como la Fiesta de Año Nuevo con los famosos Fuegos Artificiales."
+         },
+         {
+         
+            "id" : "caribe-07",
+            "titulo": "ca",
+            "foto": "./fotos/sdom-1.jpg",
+            "pais": "Republica Dominicana",
+            "ciudad": "Santo Domingo",
+            "precio": 7000,
+            "puntacion":"5⭐",
+            "info": " La Catedral Primada de América . La primera catedral del continente americano es uno de los lugares turísticos de Santo Domingo más visitados. Bajo el nombre oficial de Santa Iglesia Catedral Basílica Metropolitana de Nuestra Señora Santa María de la Encarnación o Anunciación (sí, así se llama), esta edificación de estilo gótico fue construtituloa entre 1510 y 1540. Al recorrer su interior y apreciar la gran canttituload de piezas antiguas, pinturas de la época colonial y el ambiente, nos sentiremos transportados al pasado. Además, la catedral se comunica con la Plaza España y la visita puede ser doblemente aprovechada para crear memorias que nunca te abandonarán. El lugar más icónico de la Zona Colonial te espera."
+         },
+         {
+            "id" : "caribe-08",
+            "titulo": "ca",
+            "foto": "./fotos/haba-1.jpg",
+            "pais": "Cuba",
+            "ciudad": "La habana",
+            "precio": 7000,
+            "puntacion":"4⭐",
+            "info": "El Capitolio a imagen y semejanza , el Capitolio de La Habana data de 1929 y se inspiró en el de Washington en la época en que Cuba era una república aliada de EE.UU. y proveedora del azúcar que era procesado en fábricas en lo que hoy es la zona hípster de Brooklyn. Su función legislativa cesó en 1959 con la Revolución Cubana, y es hoy sede del Ministerio de Ciencia y Tecnología. "
+         },
+         {
+            "id" : "caribe-09",
+            "titulo": "ca",
+            "foto": "./fotos/ism-1.jpg",
+            "pais": "Mexico",
+            "ciudad": "Islas Mujeres",
+            "precio": 6400,
+            "puntacion":"5⭐",
+            "info": "Playa Norte, Entre las 10 playas más bellas del mundo, Playa Norte es la playa icónica de la Isla, la que aparece en el imaginario colectivo al pensar en Isla Mujeres. Su blanquísima arena, su amplitud, su ambiente, la rica comtituloa que ahí se puede degustar, las aguas tranquilas y cáltituloas y de poca profundtituload y la sombra de las palmeras son los imanes que atraen a miles de turistas a sus costas, las primeras que los exploradores españoles vislumbraron de México en su expedición de 1519. La isla es el primer punto de todo el país a donde llegan los rayos del sol y de los pocos lugares del Caribe mexicano desde donde se puede despedir al sol que se oculta en el agua al atardecer; ¡Playa Norte es imperdible! "
+         }
+]
