@@ -3,7 +3,7 @@
             
             "id" : "europa-01",
             "titulo": "eu",
-            "foto": "./fotos/Madrid-2.jpg",
+            "foto": "./fotos/madrid-2.jpg",
             "pais": "España",
             "ciudad": "Madrid",
             "precio": 3000,
@@ -13,7 +13,7 @@
          {
             "id" : "europa-02",
             "titulo": "eu",
-            "foto": "./fotos/Milan-1.jpg",
+            "foto": "./fotos/milan-1.jpg",
             "pais": "Italia",
             "ciudad": "Milan",
             "precio": 2400,
@@ -23,7 +23,7 @@
          {
             "id" : "europa-03",
             "titulo": "eu",
-            "foto": "./fotos/Paris-1.jpg",
+            "foto": "./fotos/paris-1.jpg",
             "pais": "Francia",
             "ciudad": "Paris",
             "precio": 4000,
