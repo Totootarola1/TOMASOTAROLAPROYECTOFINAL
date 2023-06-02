@@ -72,21 +72,21 @@ function actualizarBotonesEliminar() {
 
 function eliminarDelCarrito(e) {
     Toastify({
-        text: "Reserva eliminado",
+        text: "Reserva eliminada",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top",
+        position: "right", 
+        stopOnFocus: true,
         style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
+          background:  "var(--primary-color)",
           borderRadius: "2rem",
           textTransform: "uppercase",
           fontSize: ".75rem"
         },
         offset: {
-            x: '1.5rem', // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: '1.5rem' // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: '1.5rem', 
+            y: '1.5rem' //
           },
         onClick: function(){} // Callback after click
       }).showToast();
@@ -104,21 +104,9 @@ function eliminarDelCarrito(e) {
 botonVaciar.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {
 
-    Swal.fire({
-        title: '¿Estás seguro?',
-        icon: 'question',
-        html: `Se van a borrar ${reserva.reduce((acc, producto) => acc + producto.cantidad, 0)} las reservas.`,
-        showCancelButton: true,
-        focusConfirm: false,
-        confirmButtonText: 'Sí',
-        cancelButtonText: 'No'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            reserva.length = 0;
+reserva.length = 0;
             localStorage.setItem("Reservas", JSON.stringify(reserva));
             cargarProductosCarrito();
-        }
-      })
 }
 
 
