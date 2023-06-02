@@ -27,7 +27,7 @@ function cargarInfo(allPack) {
     const div = document.createElement("div");
     div.innerHTML = ` <section class="trip">
         <div class="section__container trip__container">
-          <h2 class="section__title">${e.pais + " ," + e.ciudad}.</h2>
+          <h2 class="section__title">${e.ciudad + " ," + e.pais}.</h2>
           <p class="section__subtitle">
           </p>
           <div class="trip__grid">
