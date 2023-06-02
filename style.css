@@ -538,6 +538,10 @@ main {
   cursor: pointer;
   transition: 0.3s;
 }
+.carrito-acciones-vaciar:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+}
 
 .carrito-acciones-derecha {
     display: flex;
@@ -566,6 +570,10 @@ main {
   border-radius: 5rem;
   background-color: transparent;
   transition: 0.3s;
+}
+.carrito-acciones-comprar:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
 }
 
 .header-mobile {
