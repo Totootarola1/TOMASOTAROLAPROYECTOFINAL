@@ -49,7 +49,6 @@ function cargarProductosCarrito() {
         })
     
     actualizarBotonesEliminar();
-    actualizarTotal();
 	
     } else {
         contenedorCarritoVacio.classList.remove("disabled");
@@ -109,11 +108,6 @@ reserva.length = 0;
             cargarProductosCarrito();
 }
 
-
-function actualizarTotal() {
-    const totalCalculado = reserva.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
-    total.innerText = `$${totalCalculado}`;
-}
 
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
