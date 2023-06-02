@@ -39,7 +39,7 @@ function cargarProductosCarrito() {
                 </div>
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
-                    <p>$${e.precio}</p>
+                    <p>$${e.precio + "usd"}</p>
                 </div>
             
                 <button class="carrito-producto-eliminar" id="${e.id}"><i class="bi bi-trash-fill"></i></button>
