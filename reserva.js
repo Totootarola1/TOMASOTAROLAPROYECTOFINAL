@@ -23,15 +23,15 @@ function cargarProductosCarrito() {
     
         contenedorCarritoProductos.innerHTML = "";
     
-        reserva.forEach(producto => {
+        reserva.forEach( e => {
     
             const div = document.createElement("div");
             div.classList.add("carrito-producto");
             div.innerHTML = `
-                <img class="carrito-producto-imagen" src="${producto.foto}" alt="${producto.pais + ","+ producto.ciudad}">
+                <img class="carrito-producto-imagen" src="${e.foto}" alt="">
                 <div class="carrito-producto-titulo">
-                    <small>Título</small>
-                    <h3>${producto.pais}</h3>
+                    <small>Destino</small>
+                    <h3>${e.pais + ", " + e.ciudad + "."}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
                     <small>Paquete</small>
@@ -39,10 +39,10 @@ function cargarProductosCarrito() {
                 </div>
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
-                    <p>$${producto.precio}</p>
+                    <p>$${e.precio}</p>
                 </div>
             
-                <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
+                <button class="carrito-producto-eliminar" id="${e.id}"><i class="bi bi-trash-fill"></i></button>
             `;
     
             contenedorCarritoProductos.append(div);
