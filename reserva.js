@@ -34,17 +34,14 @@ function cargarProductosCarrito() {
                     <h3>${producto.pais}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
-                    <small>Cantidad</small>
-                    <p>${producto.cantidad}</p>
+                    <small>Paquete</small>
+                    <p>All inclusive</p>
                 </div>
                 <div class="carrito-producto-precio">
                     <small>Precio</small>
                     <p>$${producto.precio}</p>
                 </div>
-                <div class="carrito-producto-subtotal">
-                    <small>Subtotal</small>
-                    <p>$${producto.precio * producto.cantidad}</p>
-                </div>
+            
                 <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill"></i></button>
             `;
     
