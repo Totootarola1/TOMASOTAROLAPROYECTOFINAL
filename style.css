@@ -131,6 +131,9 @@ boton-menu {
 .boton-carrito {
     margin-top: 10rem;
 }
+.close-menu {
+    display: none;
+}
 
 
 body {
