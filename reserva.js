@@ -1,8 +1,7 @@
+// traemos las reservas
 let reserva = localStorage.getItem("Reservas");
 reserva = JSON.parse(reserva);
-let mail = localStorage.getItem("Mails");
-mail = JSON.parse(mail);
-
+// Llamamos elementos de html 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 const contenedorCarritoProductos = document.querySelector("#carrito-productos");
 const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
@@ -11,16 +10,13 @@ let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
-
-
+// Funcion para cargar archivos al dom
 function cargarProductosCarrito() {
     if (reserva && reserva.length > 0) {
-
         contenedorCarritoVacio.classList.add("disabled");
         contenedorCarritoProductos.classList.remove("disabled");
         contenedorCarritoAcciones.classList.remove("disabled");
         contenedorCarritoComprado.classList.add("disabled");
-    
         contenedorCarritoProductos.innerHTML = "";
     
         reserva.forEach( e => {
@@ -58,9 +54,9 @@ function cargarProductosCarrito() {
     }
 
 }
-
+// llamamos a la funcion
 cargarProductosCarrito();
-
+// funcion para que se actualizen los botones eliminar en cada pag nueva
 function actualizarBotonesEliminar() {
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 
@@ -68,7 +64,7 @@ function actualizarBotonesEliminar() {
         boton.addEventListener("click", eliminarDelCarrito);
     });
 }
-
+// funcion para eliminar productos
 function eliminarDelCarrito(e) {
     Toastify({
         text: "Reserva eliminada",
@@ -101,6 +97,7 @@ function eliminarDelCarrito(e) {
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito);
+// funcion para vaciar carrito
 function vaciarCarrito() {
 
 reserva.length = 0;
@@ -110,6 +107,7 @@ reserva.length = 0;
 
 
 botonComprar.addEventListener("click", comprarCarrito);
+// funcion para realizar compra
 function comprarCarrito() {
 
     reserva.length = 0;
