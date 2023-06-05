@@ -109,11 +109,6 @@ reserva.length = 0;
 btnComprar.addEventListener("click", comprarCarrito);
 // funcion para realizar compra
 function comprarCarrito() {
-      swal({
-        title: "Su reserva ha sido tomada!",
-        icon: "success",
-        button: "Aceptar!",
-      });
     reserva.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(reserva));
     
