@@ -123,3 +123,13 @@ function sumarReserva() {
     contentComprado.classList.remove("disabled");
 
 }
+// llamamos y damos evento al input
+const btnDown = document.querySelector("#btn-down")
+btnDown.addEventListener("click", btnD)
+function btnD() {
+    var inputs = document.getElementById("input").value;
+    mails = inputs;
+    localStorage.setItem("Mails", JSON.stringify(inputs));
+    cargarReserva();
+  
+  }
