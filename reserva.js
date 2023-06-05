@@ -11,7 +11,7 @@ const btnVacio = document.querySelector("#carrito-acciones-vaciar");
 const contentAll = document.querySelector("#total");
 const btnComprar = document.querySelector("#carrito-acciones-comprar");
 // Funcion para cargar archivos al dom
-function cargarProductosCarrito() {
+function cargarReserva() {
     if (reserva && reserva.length > 0) {
         contentReserva.classList.add("disabled");
         contentInfo.classList.remove("disabled");
@@ -27,7 +27,7 @@ function cargarProductosCarrito() {
                 <img class="carrito-producto-imagen" src="${e.foto}" alt="">
                 <div class="carrito-producto-titulo">
                     <small>Destino</small>
-                    <h3>${e.ciudad + ", " + e.pais + "."}</h3>
+                    <h3>${e.pais + ", " + e.ciudad + "."}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
                     <small>Paquete</small>
@@ -55,7 +55,7 @@ function cargarProductosCarrito() {
 
 }
 // llamamos a la funcion
-cargarProductosCarrito();
+cargarReserva();
 // funcion para que se actualizen los botones eliminar en cada pag nueva
 function actualizarbtnEliminar() {
     btnEliminar = document.querySelectorAll(".carrito-producto-eliminar");
@@ -90,7 +90,7 @@ function eliminarDelCarrito(e) {
     const index = reserva.findIndex(producto => producto.id === idBoton);
     
     reserva.splice(index, 1);
-    cargarProductosCarrito();
+    cargarReserva();
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(reserva));
 
@@ -102,13 +102,19 @@ function vaciarCarrito() {
 
 reserva.length = 0;
             localStorage.setItem("Reservas", JSON.stringify(reserva));
-            cargarProductosCarrito();
+            cargarReserva();
 }
 
 
-btnComprar.addEventListener("click", comprarCarrito);
+btnComprar.addEventListener("click", sumarReserva);
 // funcion para realizar compra
-function comprarCarrito() {
+function sumarReserva() {
+    swal({
+        title: "Su reserva ha sido tomada!",
+        icon: "success",
+        button: "Aceptar!",
+      });
+
     reserva.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(reserva));
     
