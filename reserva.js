@@ -2,22 +2,22 @@
 let reserva = localStorage.getItem("Reservas");
 reserva = JSON.parse(reserva);
 // Llamamos elementos de html 
-const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
-const contenedorCarritoProductos = document.querySelector("#carrito-productos");
-const contenedorCarritoAcciones = document.querySelector("#carrito-acciones");
-const contenedorCarritoComprado = document.querySelector("#carrito-comprado");
-let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
-const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
-const contenedorTotal = document.querySelector("#total");
-const botonComprar = document.querySelector("#carrito-acciones-comprar");
+const contentReserva = document.querySelector("#carrito-vacio");
+const contentInfo = document.querySelector("#carrito-productos");
+const contentFuncionalidad = document.querySelector("#carrito-acciones");
+const contentComprado = document.querySelector("#carrito-comprado");
+let btnEliminar = document.querySelectorAll(".carrito-producto-eliminar");
+const btnVacio = document.querySelector("#carrito-acciones-vaciar");
+const contentAll = document.querySelector("#total");
+const btnComprar = document.querySelector("#carrito-acciones-comprar");
 // Funcion para cargar archivos al dom
 function cargarProductosCarrito() {
     if (reserva && reserva.length > 0) {
-        contenedorCarritoVacio.classList.add("disabled");
-        contenedorCarritoProductos.classList.remove("disabled");
-        contenedorCarritoAcciones.classList.remove("disabled");
-        contenedorCarritoComprado.classList.add("disabled");
-        contenedorCarritoProductos.innerHTML = "";
+        contentReserva.classList.add("disabled");
+        contentInfo.classList.remove("disabled");
+        contentFuncionalidad.classList.remove("disabled");
+        contentComprado.classList.add("disabled");
+        contentInfo.innerHTML = "";
     
         reserva.forEach( e => {
     
@@ -41,26 +41,26 @@ function cargarProductosCarrito() {
                 <button class="carrito-producto-eliminar" id="${e.id}"><i class="bi bi-trash-fill"></i></button>
             `;
     
-            contenedorCarritoProductos.append(div);
+            contentInfo.append(div);
         })
     
-    actualizarBotonesEliminar();
+    actualizarbtnEliminar();
 	
     } else {
-        contenedorCarritoVacio.classList.remove("disabled");
-        contenedorCarritoProductos.classList.add("disabled");
-        contenedorCarritoAcciones.classList.add("disabled");
-        contenedorCarritoComprado.classList.add("disabled");
+        contentReserva.classList.remove("disabled");
+        contentInfo.classList.add("disabled");
+        contentFuncionalidad.classList.add("disabled");
+        contentComprado.classList.add("disabled");
     }
 
 }
 // llamamos a la funcion
 cargarProductosCarrito();
 // funcion para que se actualizen los botones eliminar en cada pag nueva
-function actualizarBotonesEliminar() {
-    botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
+function actualizarbtnEliminar() {
+    btnEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 
-    botonesEliminar.forEach(boton => {
+    btnEliminar.forEach(boton => {
         boton.addEventListener("click", eliminarDelCarrito);
     });
 }
@@ -96,7 +96,7 @@ function eliminarDelCarrito(e) {
 
 }
 
-botonVaciar.addEventListener("click", vaciarCarrito);
+btnVacio.addEventListener("click", vaciarCarrito);
 // funcion para vaciar carrito
 function vaciarCarrito() {
 
@@ -106,16 +106,16 @@ reserva.length = 0;
 }
 
 
-botonComprar.addEventListener("click", comprarCarrito);
+btnComprar.addEventListener("click", comprarCarrito);
 // funcion para realizar compra
 function comprarCarrito() {
 
     reserva.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(reserva));
     
-    contenedorCarritoVacio.classList.add("disabled");
-    contenedorCarritoProductos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
+    contentReserva.classList.add("disabled");
+    contentInfo.classList.add("disabled");
+    contentFuncionalidad.classList.add("disabled");
+    contentComprado.classList.remove("disabled");
 
 }
