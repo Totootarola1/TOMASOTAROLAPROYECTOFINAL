@@ -520,14 +520,21 @@ main {
     justify-content: space-between;
 }
 
+
 .carrito-acciones-vaciar {
-    border: 0;
-    background-color: var(--clr-gray);
-    padding: 1rem;
-    border-radius: 1rem;
-    color: var(--clr-main);
-    text-transform: uppercase;
-    cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 5rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.carrito-acciones-vaciar:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
 }
 
 .carrito-acciones-derecha {
@@ -546,14 +553,21 @@ main {
 }
 
 .carrito-acciones-comprar {
-    border: 0;
-    background-color: var(--clr-main);
-    padding: 1rem;
-    color: var(--clr-white);
-    text-transform: uppercase;
-    cursor: pointer;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    
+  padding: 1rem;
+  cursor: pointer;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 5rem;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.carrito-acciones-comprar:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
 }
 
 .header-mobile {
