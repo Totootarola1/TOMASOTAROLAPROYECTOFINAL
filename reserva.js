@@ -120,7 +120,7 @@ function sumarReserva() {
 
     reserva.length = 0;
     localStorage.setItem("Reservas", JSON.stringify(reserva));
-    cargarReserva();
+    
 }
 // llamamos y damos evento al input
 const btnDown = document.querySelector("#btn-down")
