@@ -278,6 +278,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   outline: solid 3px var(--primary-color);
+  margin-top: 60px;
 }
 
 .subscribe__container {
