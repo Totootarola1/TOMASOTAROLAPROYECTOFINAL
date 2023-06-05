@@ -104,8 +104,8 @@ btnVacio.addEventListener("click", vaciarCarrito);
 function vaciarCarrito() {
 
 reserva.length = 0;
-            localStorage.setItem("Reservas", JSON.stringify(reserva));
-            cargarReserva();
+localStorage.setItem("Reservas", JSON.stringify(reserva));
+cargarReserva();
 }
 
 
@@ -115,6 +115,7 @@ function sumarReserva() {
 
     reserva.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(reserva));
+    cargarReserva();
     
     contentReserva.classList.add("disabled");
     contentInfo.classList.add("disabled");
