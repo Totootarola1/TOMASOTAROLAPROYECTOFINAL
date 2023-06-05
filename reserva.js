@@ -27,7 +27,7 @@ function cargarProductosCarrito() {
                 <img class="carrito-producto-imagen" src="${e.foto}" alt="">
                 <div class="carrito-producto-titulo">
                     <small>Destino</small>
-                    <h3>${e.pais + ", " + e.ciudad + "."}</h3>
+                    <h3>${e.ciudad + ", " + e.pais + "."}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
                     <small>Paquete</small>
