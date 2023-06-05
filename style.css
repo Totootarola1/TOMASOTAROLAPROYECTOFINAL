@@ -269,6 +269,15 @@ body {
   border: solid 3px var(--primary-color);
   margin-left: 20px;
   margin-right: 20px;
+  outline: solid 3px var(--primary-color);
+}
+.subscribe-1 {
+  background-color:ghostwhite;
+  border-radius: 1rem;
+  border: solid 3px var(--primary-color);
+  margin-left: 20px;
+  margin-right: 20px;
+  outline: solid 3px var(--primary-color);
 }
 
 .subscribe__container {
