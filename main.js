@@ -109,7 +109,7 @@ function newRes(e) {
   }).showToast();
 
   const id = e.currentTarget.id;
-  const reservaNueva = paquetes.find(e => e.id === id);
+  const reservaNueva = paquetes.find(e => e.titulo === id);
   nuevasReservas.push(reservaNueva);
   if (nuevasReservas.some(e => e.id === id)) {
     const index = nuevasReservas.findIndex(e => e.id === id);
