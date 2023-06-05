@@ -112,16 +112,15 @@ cargarReserva();
 btnComprar.addEventListener("click", sumarReserva);
 // funcion para realizar compra
 function sumarReserva() {
-
-    reserva.length = 0;
-    localStorage.setItem("productos-en-carrito", JSON.stringify(reserva));
-    cargarReserva();
     
     contentReserva.classList.add("disabled");
     contentInfo.classList.add("disabled");
     contentFuncionalidad.classList.add("disabled");
     contentComprado.classList.remove("disabled");
 
+    reserva.length = 0;
+    localStorage.setItem("Reservas", JSON.stringify(reserva));
+    cargarReserva();
 }
 // llamamos y damos evento al input
 const btnDown = document.querySelector("#btn-down")
