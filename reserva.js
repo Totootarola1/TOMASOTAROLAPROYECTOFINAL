@@ -92,7 +92,10 @@ function eliminarDelCarrito(e) {
     reserva.splice(index, 1);
     cargarReserva();
 
-    localStorage.setItem("productos-en-carrito", JSON.stringify(reserva));
+    reserva.length = 0;
+    localStorage.setItem("Reservas", JSON.stringify(reserva));
+    cargarReserva();
+
 
 }
 
